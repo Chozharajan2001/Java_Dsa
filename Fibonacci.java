@@ -13,7 +13,7 @@ public class Fibonacci {
         System.out.println(s);
 
         for (int i = 0; i < n; i++) {
-            int a = f + s, temp = 0;
+            int a = f + s;
             System.out.println(a);
             f = s;
             s = a;
