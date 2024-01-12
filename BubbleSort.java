@@ -23,6 +23,7 @@ public class BubbleSort{
     // nth iteration: 1   So, (n-1)(n-1+1)/2 = (n^2 * n)/2
     public static void sort(int[] a){
         int n = a.length; 
+        boolean swap = false;
         for(int i=1; i<n; i++){
             for(int j=0; j<n-i; j++){
                 //if(a[j])<a[j+1]) for Descending order sort
@@ -30,7 +31,12 @@ public class BubbleSort{
                     int temp = a[j];
                     a[j] = a[j+1];
                     a[j+1] = temp;
+                    swap = true;
                 }
+            }
+            if(!swap){
+                System.out.println("Already sorted");
+                break;
             }
         }
         ArrayList<Integer> list = new ArrayList<>();
