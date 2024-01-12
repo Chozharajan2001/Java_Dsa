@@ -15,6 +15,12 @@ public class BubbleSort{
         sort(array);
     }
     // Implementing Bubble sort
+    //Space Complex  : O(1) Since onely one array is used
+    //Time Complex : O(n^2) 
+    //1st iteration: n-1 steps
+    //2nd iteration: n-2 steps
+    // ... up to
+    // nth iteration: 1   So, (n-1)(n-1+1)/2 = (n^2 * n)/2
     public static void sort(int[] a){
         int n = a.length; 
         for(int i=1; i<n; i++){
