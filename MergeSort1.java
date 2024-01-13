@@ -26,7 +26,7 @@ public class MergeSort1{
         // 'i' is index of left array
         // 'j' is index of right array
         int[] join = new int[left.length + right.length];
-        while(i<left.length && j<right.length){
+        while(i<left.length || j<right.length){
             if(left[i]>right[j]){
                 join[k] = right[j];
                 j++;
