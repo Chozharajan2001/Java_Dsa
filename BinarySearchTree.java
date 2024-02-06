@@ -51,7 +51,7 @@ class BinarySearchTree{
     }
     //delete an element in BST
     public void delete(int val){
-        delete(root, val);
+        root = delete(root, val);
     }
     public Node delete(Node root, int val){
         if(root == null){
